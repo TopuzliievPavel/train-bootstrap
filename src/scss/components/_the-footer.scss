@@ -1,0 +1,22 @@
+// Footer
+.footer {
+  padding: 20px 0;
+  background-color: $accent-dark;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: $size-xs;
+
+  @include media(">=phone") {
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  margin-bottom: 0;
+}

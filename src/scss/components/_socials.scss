@@ -1,0 +1,36 @@
+// Social links
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin: 0 10px;
+}
+
+.socials__link {
+  display: block;
+
+  background-color: $primary;
+  border-radius: 50%;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $accent-dark;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+
+  color: $accent-dark;
+  transition: color .3s;
+
+  &:hover {
+    color: $primary;
+  }
+}

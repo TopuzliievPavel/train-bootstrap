@@ -1,0 +1,40 @@
+ //Forms
+.form {
+  display: flex;
+}
+
+input.form__input {
+  flex: 1 0 auto;
+  padding: $btn-padding;
+
+  background: transparent;
+  border: solid 2px currentColor;
+  border-right: transparent;
+  font-size: $size-xs;
+
+  border-radius: 5px 0 0 5px;
+
+  &::placeholder {
+    color: $primary;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  @include media(">=tablet") {
+    font-size: $size-l;
+  }
+}
+
+input.form__btn {
+  flex: 0 0 auto;
+  border-radius: 0 5px 5px 0;
+
+  @include media(">=tablet") {
+    font-size: $size-l;
+    margin: 0;
+  }
+}
