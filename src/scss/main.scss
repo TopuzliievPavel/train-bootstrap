@@ -1,0 +1,42 @@
+// Main
+
+@import "base/variables";
+@import "base/include-media";
+@import "base/mixins";
+
+@import "vendors/normalize";
+@import "vendors/breakpoints";
+@import "vendors/typography";
+
+@import "fonts/fonts";
+@import "fonts/icons";
+
+@import "components/the-header";
+@import "components/index-visual";
+@import "components/the-footer";
+@import "components/aside";
+@import "components/forms";
+@import "components/socials";
+@import "components/buttons";
+
+@import "layout/page-index";
+@import "layout/page-content";
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+body {
+  font-family: $default-font;
+  min-width: $base-min-width;
+  color: $base-text-color;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
