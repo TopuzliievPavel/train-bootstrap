@@ -30,7 +30,6 @@ var path = {
   src: {
     html: 'src/*.html',
     js: 'src/js/common.js',
-    libs: 'src/libs/jquery/dist/jquery.min.js',
     style: 'src/scss/main.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
@@ -42,7 +41,7 @@ var path = {
     img: 'src/img/**/*.*',
     fonts: 'srs/fonts/**/*.*'
   },
-  clean: './dist/*'
+  clean: './dest/*'
 };
 
 /* настройки сервера */

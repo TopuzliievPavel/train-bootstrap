@@ -1,77 +1,39 @@
 // ----------------	Visual ---------------
 .visual {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 80px 0;
-  background-image: url("../img/src/slide.jpg");
+  background-image: url("../../img/src/slide.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
 
-  text-align: center;
-  font-size: 16px;
+.jumbotron_customize {
+  background: transparent;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.lead_line-height {
   line-height: 1.3;
-  color: $base-color;
+}
 
-  // fix for ie vertical align
-  &:after {
-    content: "";
-    height: calc(100vh - 160px);
-  }
-  //-----------------------------
+.btn-info_theme {
+  background-image: linear-gradient(rgba(252, 255, 71, 1.0), rgba(248, 232, 28, 1.0));
+  color: $body-color;
+}
 
-  @include media(">=tablet") {
-    font-size: $size-m;
-  }
-
-  @include media(">=desktop") {
-    font-size: $size-l;
-  }
-
-  @include media(">=widescreen") {
-    font-size: $size-xl;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: $dark-color;
-    opacity: .4;
+.btn-light_theme {
+  &:hover {
+    background-image: linear-gradient(rgba(252, 255, 71, 1.0), rgba(248, 232, 28, 1.0));
+    color: $body-color;
+    border-color: currentColor;
   }
 }
 
-.visual__inner {
-  padding: 0 15px;
-  z-index: 1;
-
-  @include media(">=tablet") {
-    max-width: 700px;
-  }
-}
-
-.visual__title {
-  font-size: 24px;
-
-  @include media(">=desktop") {
-    font-size: 44px;
-  }
-
-  @include media(">=widescreen") {
-    font-size: $h2-basic-font-size;
-  }
-}
-//
-.visual__btn {
-  width: 100%;
-  @include media(">=tablet") {
-    width: auto;
-  }
+.btn-light_theme,
+.btn-info_theme {
+  line-height: 1.3;
+  font-size: 18px;
 }

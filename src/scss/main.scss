@@ -1,42 +1,16 @@
 // Main
 
-@import "base/variables";
-@import "base/include-media";
-@import "base/mixins";
+@import "base/bootstrap";
 
-@import "vendors/normalize";
-@import "vendors/breakpoints";
 @import "vendors/typography";
-
+@import "base/mixins";
 @import "fonts/fonts";
-@import "fonts/icons";
 
-@import "components/the-header";
+@import "components/navbar";
 @import "components/index-visual";
-@import "components/the-footer";
-@import "components/aside";
-@import "components/forms";
-@import "components/socials";
-@import "components/buttons";
+@import "components/the-header";
 
-@import "layout/page-index";
-@import "layout/page-content";
 
 html {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: 20px;
 }
-
-body {
-  font-family: $default-font;
-  min-width: $base-min-width;
-  color: $base-text-color;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-

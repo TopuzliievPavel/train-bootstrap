@@ -2,8 +2,3 @@ node_modules/
 .vscode/
 dist/
 package-lock.json
-.git/
-**/_backstage
-/**/Thumbs.db
-/**/*.DS_Store
-src/libs/jquery/
