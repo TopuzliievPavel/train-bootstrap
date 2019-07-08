@@ -1,3 +1,7 @@
 .nav-link_size {
-  font-size: 24px;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
 }

@@ -1,14 +1,21 @@
 // Main
 
 @import "base/bootstrap";
+@import "base/mixins";
+
+@import "fonts/fonts";
+@import "fonts/icons";
 
 @import "vendors/typography";
-@import "base/mixins";
-@import "fonts/fonts";
+@import "vendors/normalize";
+
 
 @import "components/navbar";
 @import "components/index-visual";
 @import "components/the-header";
+@import "components/the-footer";
+
+@import "layout/page-index";
 
 
 html {

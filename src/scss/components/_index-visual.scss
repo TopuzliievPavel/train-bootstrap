@@ -1,22 +1,56 @@
 // ----------------	Visual ---------------
 .visual {
+  position: relative;
   background-image: url("../../img/src/slide.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  min-height: calc(100vh - 88px);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .4);
+  }
+
+  &:after {
+    content: "";
+    height: 100vh;
+  }
+}
+
+.display-4 {
+  font-size: 24px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 44px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $h2-font-size;
+  }
 }
 
 .jumbotron_customize {
   background: transparent;
   max-width: 700px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+  z-index: 1;
 }
 
 .lead_line-height {
   line-height: 1.3;
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $lead-font-size;
+  }
 }
 
 .btn-info_theme {
@@ -24,16 +58,14 @@
   color: $body-color;
 }
 
-.btn-light_theme {
+.btn-light_theme,
+.btn-info_theme {
+  text-transform: capitalize;
+  line-height: 1.3;
+  font-size: 18px;
   &:hover {
     background-image: linear-gradient(rgba(252, 255, 71, 1.0), rgba(248, 232, 28, 1.0));
     color: $body-color;
-    border-color: currentColor;
+    border-color: transparent;
   }
-}
-
-.btn-light_theme,
-.btn-info_theme {
-  line-height: 1.3;
-  font-size: 18px;
 }

@@ -1,63 +1,10 @@
-$blue:    #434c6d;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #FF0000;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #20c7a1;
-$teal:    #f8e81c;
-$cyan:    #f8e81c;
+$blue:    #434c6d; // primary
+$red:     #FF0000; // danger
+$yellow:  #ffc107; // warning
+$green:   #20c7a1; // success
+$cyan:    #f8e81c; // info
+$teal:    #1cb18f;
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-
-$grays: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-$grays: map-merge(
-    (
-      "100": $gray-100,
-      "200": $gray-200,
-      "300": $gray-300,
-      "400": $gray-400,
-      "500": $gray-500,
-      "600": $gray-600,
-      "700": $gray-700,
-      "800": $gray-800,
-      "900": $gray-900
-    ),
-    $grays
-);
-
-$colors: ();
-// stylelint-disable-next-line scss/dollar-variable-default
-$colors: map-merge(
-    (
-      "blue":       $blue,
-      "indigo":     $indigo,
-      "purple":     $purple,
-      "pink":       $pink,
-      "red":        $red,
-      "orange":     $orange,
-      "yellow":     $yellow,
-      "green":      $green,
-      "teal":       $teal,
-      "cyan":       $cyan,
-      "white":      $white,
-      "gray":       $gray-600,
-      "gray-dark":  $gray-800
-    ),
-    $colors
-);
 
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -66,7 +13,7 @@ $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
-$dark:          $gray-800;
+$dark:          $teal;
 $theme-colors: ();
 
 
@@ -97,6 +44,14 @@ $font-size-base: 1rem;
 
 $grid-columns: 12;
 $grid-gutter-width: 30px;
+
+// Font-size
+$size-xxs: 12px;
+$size-xs: 14px;
+$size-m: 20px;
+$size-l: 24px;
+$size-xl: 26px;
+$size-xxl: 72px;
 
 // Typography
 $font-family-sans-serif:"robotoRegular", "Helvetica Neue", Arial, sans-serif;
@@ -129,13 +84,17 @@ h1 {
   color: $info;
 }
 
-h2, h4 {
+h2,
+h4 {
   color: $success;
 }
 
-h3, h5, h6 {
+h3,
+h5,
+h6 {
   color: $primary;
 }
+
 
 .h1 {
   font-size: $h1-font-size;
@@ -189,18 +148,43 @@ $navbar-light-toggler-border-color: rgba($primary, .6);
 // navbar brand
 $navbar-brand-padding-y: 0;
 
-
 // visual
 $jumbotron-color: white;
-$display-line-height: $headings-line-height;
-$lead-font-size: $font-size-base * 1;
-
 $display4-size: 3.2rem;
+$display-line-height: $headings-line-height;
+$lead-font-size: $font-size-base * 1.3;
 
 // buttons
 $btn-font-family: "robotoBold";
+$btn-transition: color .3s;
 
-$btn-transition: color .3s ease, background-color .3s ease, border-color .3s ease,  box-shadow .3s ease;
+// list groups
+$list-group-item-padding-y: 0;
+$list-group-item-padding-x: 0;
+$list-group-bg: $primary;
+$list-group-color: $success;
+$list-group-hover-bg: $success;
+
+
+// cards
+$card-bg: transparent;
+$card-border-color: 0;
+$card-spacer-x: 0;
+
+
+// forms
+$input-bg: transparent;
+$input-border-color: $primary;
+$input-border-width: 2px;
+$input-placeholder-color: $primary;
+$input-focus-bg: $input-bg;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: none;
+$input-font-size: 1.2rem;
+$input-line-height: 1.3rem;
+$input-color: $primary;
+$input-focus-color: $input-color;
+$input-btn-font-size: 1.2rem;
 
 
 

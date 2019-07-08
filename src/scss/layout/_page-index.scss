@@ -1,1 +1,77 @@
 // page-index
+
+// About
+.about {
+  background-color: $primary;
+  padding: 30px 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 40px 0 80px;
+  }
+}
+
+.about__title {
+  font-size: $size-xl;
+  @include media-breakpoint-up(sm) {
+    font-size: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $h2-font-size;
+  }
+}
+
+.card-title {
+  position: relative;
+  padding-bottom: 20px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: $success;
+  }
+}
+
+.card-text {
+  font-size: 16px;
+  flex: 1 0 auto;
+}
+
+.card-body__btn {
+  font-size: 14px;
+  font-family: "robotoMedium", sans-serif;
+  flex: 0 0 auto;
+}
+
+.card-img {
+  width: auto;
+  min-height: 135px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+// ------------------------ contact ------------------
+.contact {
+  background-color: $success;
+  padding: 30px 0 50px;
+}
+
+form {
+  input.form-control {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    color: $primary;
+  }
+
+  input.btn {
+    border-radius: 0 5px  5px 0;
+  }
+}
+
