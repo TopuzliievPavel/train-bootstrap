@@ -1,10 +1,12 @@
-$blue:    #434c6d; // primary
-$red:     #FF0000; // danger
-$yellow:  #ffc107; // warning
-$green:   #20c7a1; // success
-$cyan:    #f8e81c; // info
-$teal:    #1cb18f;
-
+$blue:     #434c6d; // primary
+$red:      #FF0000; // danger
+$yellow:   #ffc107; // warning
+$green:    #20c7a1; // success
+$cyan:     #f8e81c; // info
+$teal:     #1cb18f;
+$gray-100: #f8f9fa;
+$gray-600: #6c757d;
+$white:    #fff;
 
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -70,7 +72,7 @@ $h3-font-size: $font-size-base * 1.4;
 $h4-font-size: $font-size-base * 1.2;
 $h5-font-size: $font-size-base * 1; //1rem must be always
 $h6-font-size: $font-size-base * 0.8; // 16px
-
+//
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: $headings-margin-bottom;
@@ -79,7 +81,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: $headings-line-height;
   text-transform: uppercase;
 }
-
+//
 h1 {
   color: $info;
 }
@@ -89,7 +91,11 @@ h4 {
   color: $success;
 }
 
-h3,
+h3 {
+  color: $white;
+}
+
+
 h5,
 h6 {
   color: $primary;
@@ -122,25 +128,24 @@ h6 {
 }
 
 // Paragraphs
-//
+
 // Style p element.
 $paragraph-margin-bottom: 1em;
 
 // Links
-//
+
 // Style anchor elements.
 $link-color: $primary;
 $link-decoration: none;
 $link-hover-color: darken($danger, 15%);
 $link-hover-decoration: none;
 
-
 // navbar
 $navbar-light-color: rgba($primary, 1);
 $navbar-light-hover-color: rgba($danger, 1);
 $navbar-light-active-color: rgba($danger, 1);
-
-// navbar toggler
+//
+//// navbar toggler
 $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
 $navbar-light-toggler-border-color: rgba($primary, .6);
@@ -149,28 +154,26 @@ $navbar-light-toggler-border-color: rgba($primary, .6);
 $navbar-brand-padding-y: 0;
 
 // visual
-$jumbotron-color: white;
+//$jumbotron-color: white;
 $display4-size: 3.2rem;
 $display-line-height: $headings-line-height;
 $lead-font-size: $font-size-base * 1.3;
 
-// buttons
-$btn-font-family: "robotoBold";
-$btn-transition: color .3s;
+//// buttons
+$btn-font-family: "robotoMedium";
+$btn-transition: color .3s ease;
 
-// list groups
+//// list groups
 $list-group-item-padding-y: 0;
 $list-group-item-padding-x: 0;
 $list-group-bg: $primary;
 $list-group-color: $success;
 $list-group-hover-bg: $success;
 
-
 // cards
 $card-bg: transparent;
 $card-border-color: 0;
 $card-spacer-x: 0;
-
 
 // forms
 $input-bg: transparent;
@@ -181,10 +184,18 @@ $input-focus-bg: $input-bg;
 $input-focus-border-color: $primary;
 $input-focus-box-shadow: none;
 $input-font-size: 1.2rem;
-$input-line-height: 1.3rem;
 $input-color: $primary;
 $input-focus-color: $input-color;
 $input-btn-font-size: 1.2rem;
+$input-height: auto;
+
+// Figures
+$figure-caption-font-size: 100%;
+$figure-caption-color: $success;
+
+// aside
+$blockquote-font-size: $font-size-base * 0.7;
+
 
 
 

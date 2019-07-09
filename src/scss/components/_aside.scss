@@ -2,16 +2,16 @@
 
 .aside_widget {
   padding: 30px;
+  margin-bottom: 30px;
 
   font-size: 15px;
   line-height: 1.3;
 
-  background-color: $primary;
   box-shadow: 0 2px 20px 6px rgba(#000, .3);
 
   @include media(">=desktop") {
     position: fixed;
-    width: 37%;
+    width: 33%;
     right: 15px;
 
     @supports (position: sticky) {
@@ -29,27 +29,33 @@
   }
 }
 
-.aside__text {
-  color: $base-color;
+cite {
+  font-style: normal;
+  font-family: "robotoMedium", sans-serif;
+  font-size: 12px;
 }
 
-.aside__text-wrap {
-  position: relative;
-  padding-left: 20px;
+.blockquote {
+  margin-bottom: 0;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 100%;
-    background-color: $base-color;
+  p {
+    position: relative;
+    padding-left: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: $white;
+    }
   }
 }
-
-.aside__author {
-  display: flex;
-  justify-content: flex-end;
+.blockquote-footer {
+  &:before {
+    content: "";
+  }
 }

@@ -1,0 +1,19 @@
+.btn-info,
+.btn-link {
+  background-image: linear-gradient(rgba(252, 255, 71, 1.0), rgba(248, 232, 28, 1.0));
+  color: $body-color;
+  line-height: 1.3;
+  font-size: 18px;
+
+  &:hover {
+    background-image: linear-gradient(rgba(252, 255, 71, 1.0), rgba(248, 232, 28, 1.0));
+    color: $body-color;
+    border-color: transparent;
+  }
+}
+
+.btn-link {
+  color: $white;
+  border: solid 1px currentColor;
+  background-image: none;
+}

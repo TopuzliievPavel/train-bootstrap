@@ -1,33 +1,30 @@
 // Social links
-.socials {
-  list-style: none;
-}
-.socials__item {
-  margin: 0 10px;
+.list-group {
+  flex-direction: row;
+  line-height: 1.3;
 }
 
-.socials__link {
-  background-color: $primary;
-  border-radius: 50%;
-  transition: background-color .3s;
-
-  &:hover {
-    background-color: $success;
-  }
-}
-
-.icon {
+.list-group-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 42px;
   height: 42px;
-  font-size: 18px;
+  margin: 0 5px;
 
-  color: $primary;
-  transition: color .3s;
+  transition: background-color .3s;
 
   &:hover {
-    color: $primary;
+    background-color: $dark;
+    border: transparent;
+
+    a {
+      color: $primary;
+    }
+  }
+
+  a {
+    color: $dark;
   }
 }

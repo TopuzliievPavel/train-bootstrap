@@ -2,6 +2,7 @@
 
 @import "base/bootstrap";
 @import "base/mixins";
+@import "base/include-media";
 
 @import "fonts/fonts";
 @import "fonts/icons";
@@ -11,11 +12,15 @@
 
 
 @import "components/navbar";
+@import "components/buttons";
 @import "components/index-visual";
+@import "components/aside";
 @import "components/the-header";
 @import "components/the-footer";
+@import "components/socials";
 
 @import "layout/page-index";
+@import "layout/page-content";
 
 
 html {

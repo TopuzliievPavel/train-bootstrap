@@ -1,15 +1,6 @@
 // page-index
 
 // About
-.about {
-  background-color: $primary;
-  padding: 30px 0;
-
-  @include media-breakpoint-up(sm) {
-    padding: 40px 0 80px;
-  }
-}
-
 .about__title {
   font-size: $size-xl;
   @include media-breakpoint-up(sm) {
@@ -18,6 +9,10 @@
   @include media-breakpoint-up(lg) {
     font-size: $h2-font-size;
   }
+}
+
+.card {
+  min-height: 100%;
 }
 
 .card-title {
@@ -43,12 +38,10 @@
 
 .card-body__btn {
   font-size: 14px;
-  font-family: "robotoMedium", sans-serif;
   flex: 0 0 auto;
 }
 
 .card-img {
-  width: auto;
   min-height: 135px;
 }
 
@@ -59,19 +52,70 @@
 
 // ------------------------ contact ------------------
 .contact {
-  background-color: $success;
   padding: 30px 0 50px;
 }
 
-form {
-  input.form-control {
-    border-radius: 5px 0 0 5px;
-    border-right: none;
-    color: $primary;
-  }
+input.form-control {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  color: $primary;
+  line-height: 1.3;
+}
 
-  input.btn {
-    border-radius: 0 5px  5px 0;
+input.btn {
+  border-radius: 0 5px  5px 0;
+}
+
+.list-item {
+  position: relative;
+  font-size: 16px;
+}
+
+.list-link {
+  transition: color .3s;
+  padding-left: 20px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-top: 4px solid transparent;
+    border-left: 6px solid $primary;
+    border-bottom: 4px solid transparent;
+
+    transition: border-left-color .3s;
+  }
+  &:hover,
+  &:hover:before,
+  &:focus:before {
+    border-left-color: $info;
+    color: $info;
+  }
+}
+
+.box-community {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.box-address__list {
+  font-size: 16px;
+}
+
+address,
+.box-address__list,
+.box-address__description {
+  margin-bottom: 0;
+}
+
+.box-address__link {
+  transition: .3s;
+  &:hover {
+    color: $info;
   }
 }
 
