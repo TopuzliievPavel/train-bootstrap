@@ -2,14 +2,12 @@
 
 @import "base/bootstrap";
 @import "base/mixins";
-@import "base/include-media";
 
 @import "fonts/fonts";
 @import "fonts/icons";
 
 @import "vendors/typography";
 @import "vendors/normalize";
-
 
 @import "components/navbar";
 @import "components/buttons";

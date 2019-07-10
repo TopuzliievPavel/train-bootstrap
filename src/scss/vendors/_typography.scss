@@ -1,0 +1,54 @@
+// Typography
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: $info;
+}
+
+h2,
+h4 {
+  color: $success;
+}
+
+h3 {
+  color: $white;
+}
+
+h5,
+h6 {
+  color: $primary;
+}
+
+
+.h1 {
+  font-size: $h1-font-size;
+  color: $primary;
+}
+
+.h2 {
+  font-size: $h2-font-size;
+}
+
+.h3 {
+  font-size: $h3-font-size;
+}
+
+.h4 {
+  font-size: $h4-font-size;
+}
+
+.h5 {
+  font-size: $h5-font-size;
+}
+
+.h6 {
+  font-size: $h6-font-size;
+}

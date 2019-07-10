@@ -1,7 +1,5 @@
 // Aside content
-
 .aside_widget {
-  padding: 30px;
   margin-bottom: 30px;
 
   font-size: 15px;
@@ -9,30 +7,9 @@
 
   box-shadow: 0 2px 20px 6px rgba(#000, .3);
 
-  @include media(">=desktop") {
-    position: fixed;
-    width: 33%;
-    right: 15px;
-
-    @supports (position: sticky) {
-      position: sticky;
-      top: 10px;
-      width: 100%;
-    }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
   }
-  @include media(">=widescreen") {
-    width: 321px;
-    right: calc((100vw - 1170px)/2);
-    @supports (position: sticky) {
-      width: 100%;
-    }
-  }
-}
-
-cite {
-  font-style: normal;
-  font-family: "robotoMedium", sans-serif;
-  font-size: 12px;
 }
 
 .blockquote {
@@ -54,8 +31,15 @@ cite {
     }
   }
 }
+
 .blockquote-footer {
   &:before {
     content: "";
   }
+}
+
+cite {
+  font-style: normal;
+  font-family: "robotoMedium", sans-serif;
+  font-size: $font-size-xxs;
 }
