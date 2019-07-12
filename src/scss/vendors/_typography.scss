@@ -2,53 +2,50 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
   text-transform: uppercase;
 }
 
-h1 {
-  color: $info;
-}
-
-h2,
-h4 {
+h4,
+h2 {
   color: $success;
 }
 
-h3 {
-  color: $white;
-}
-
 h5,
-h6 {
-  color: $primary;
+h6,
+.card-header {
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-
-.h1 {
-  font-size: $h1-font-size;
-  color: $primary;
+.display-4 {
+  font-size: $font-size-l;
+  @include media-breakpoint-up(md) {
+    font-size: 44px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $h2-font-size;
+  }
 }
 
-.h2 {
-  font-size: $h2-font-size;
+.lead {
+  line-height: 1.3;
+  font-size: $font-size-sm;
+
+  @include media-breakpoint-up(md) {
+    font-size: $lead-font-size;
+  }
 }
 
-.h3 {
-  font-size: $h3-font-size;
+.blockquote {
+  font-size: 15px;
 }
 
-.h4 {
-  font-size: $h4-font-size;
+.blockquote-footer {
+  &:before {
+    content: "";
+  }
 }
 
-.h5 {
-  font-size: $h5-font-size;
-}
-
-.h6 {
-  font-size: $h6-font-size;
+.copyright {
+  font-size: $font-size-xs;
 }

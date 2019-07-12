@@ -1,10 +1,4 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 input,
 textarea {
@@ -18,19 +12,7 @@ textarea {
   }
 }
 
-form,
-fieldset {
-  margin: 0;
-  padding: 0;
-  border-style: none;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-blockquote, a, img, ol, ul, li {
+a, ol, ul, li {
   margin: 0;
   padding: 0;
   border: 0;
@@ -69,14 +51,6 @@ button {
   }
 }
 
-/**
- * Remove default margin.
- */
-
-body {
-  margin: 0;
-}
-
 /* Links
    ========================================================================== */
 
@@ -103,28 +77,6 @@ a:focus {
 /* HTML5 display definitions
    ========================================================================== */
 
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.

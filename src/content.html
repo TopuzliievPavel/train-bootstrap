@@ -21,45 +21,47 @@
 
 </head>
 <body>
-<header class="content-header bg-success">
-  <nav class="navbar navbar-expand-lg navbar-light text-center d-flex flex-row-reverse">
-    <a class="navbar-brand nav-link_size m-0" href="/">
-      <img src="img/src/logo.png"  class="d-inline-block align-top" alt="SSA Group">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Over owns<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gratis software</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Showcase</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
+<header class="header bg-success">
+ <div class="container-fluid px-2">
+   <nav class="navbar navbar-expand-lg navbar-light text-center flex-row-reverse">
+     <a class="navbar-brand nav-link_size m-0" href= "/"text-truncate>
+       <img src="img/src/logo.png"  class="d-inline-block align-top" alt="SSA Group">
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" href="index.html">Over owns<span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Gratis software</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Showcase</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Contact</a>
+         </li>
+       </ul>
+     </div>
 
-  </nav>
+   </nav>
+ </div>
 </header>
 
 <main class="content-main">
   <div class="container">
-      <div class="row">
+      <div class="row mb-lg-5">
         <div class="col-lg-8">
-          <article class="software mb-lg-5">
+          <article class="software">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate ea eligendi laborum libero maxime nihil numquam placeat totam ullam! Beatae, explicabo, minima! Assumenda et molestiae omnis quam omnis quam</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate ea eligendi laborum libero maxime nihil numquam placeat totam ullam! Beatae, explicabo, minima! Assumenda et molestiae omnis quam omnis quam</p>
 
-            <figure class="figure m-0">
+            <figure class="figure d-block m-0">
               <img src="img/src/image.jpg" class="figure-img m-0" alt="Funny train">
-              <figcaption class="figure-caption">Tussencop</figcaption>
+              <figcaption class="figure-caption">Tussenkop</figcaption>
             </figure>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi aspernatur consequatur deserunt dolores, dolorum fugiat harum inventore iste, laboriosam modi quam quisquam reiciendis vitae. Consequuntur delectus dicta distinctio error illo iste magni maxime molestias nostrum officia quas, quasi quibusdam quos, ratione repellat sed voluptatum. Corporis cum facere fuga necessitatibus optio perferendis perspiciatis sint, sit. Ab animi architecto asperiores, doloribus facere facilis laborum odio repellendus sequi sint tempore vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate ea eligendi laborum libero maxime nihil numquam placeat totam ullam! Beatae, explicabo, minima! Assumenda et molestiae omnis quam, similique tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate ea eligendi laborum libero maxime nihil numquam placeat totam ullam! Beatae, explicabo, minima! Assumenda et molestiae omnis quam, similique tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate ea eligendi laborum libero maxime nihil numquam placeat totam ullam!</p>
@@ -68,13 +70,14 @@
 
         <div class="col-lg-4">
           <aside class="aside sticky-top mt-3">
-            <div class="aside_widget mb-xs-4 p-4 bg-primary">
-              <h3>Some title</h3>
-              <blockquote class="blockquote">
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing                   elit. Consequatur dolore ea incidunt praesentium quidem quos tempora. Ab                   aliquid distinctio, ducimus eius magnam obcaecati odio praesentium quae.                  Doloribus magnam nemo nihil?
-              </p>
-                <footer class="blockquote-footer text-right">
-                  <cite class="text-info" title="Leonardo da Vinci">Leonardo da Vinci</cite>
+            <div class="aside_widget mb-4 mb-lg-0 p-4 bg-primary">
+              <h3 class="text-white">Some title</h3>
+              <blockquote class="blockquote mb-0">
+                <p class="text-white pl-3">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore ea incidunt praesentium quidem quos tempora. Ab                   aliquid distinctio, ducimus eius magnam obcaecati odio praesentium quae.                  Doloribus magnam nemo nihil?
+                </p>
+                <footer class="blockquote-footer text-info text-right">
+                  <cite title="Leonardo da Vinci">Leonardo da Vinci</cite>
                 </footer>
               </blockquote>
             </div>
@@ -83,28 +86,91 @@
       </div>
 
   </div>
+
+  <section class="contact bg-success py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mb-4 mb-lg-0">
+          <div class="contact-box">
+            <h5 class="card-header">Text in the input must be show in the content page</h5>
+            <form name="contact-form" action="/" class="form card">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Some text">
+                <input type="submit" class="btn btn-info" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="row justify-content-around">
+            <div class="col-md-5 mb-4 mb-md-0">
+              <div class="box-community">
+                <h5 class="card-header">Community</h5>
+                <ul class="list-group">
+                  <li class="list-group-item text-truncate">
+                    <a href="#" class="list-link">Link 1</a>
+                  </li>
+                  <li class="list-group-item text-truncate">
+                    <a href="#" class="list-link">Link 2</a>
+                  </li>
+                  <li class="list-group-item text-truncate">
+                    <a href="#" class="list-link">Some long long link 3</a>
+                  </li>
+                  <li class="list-group-item text-truncate">
+                    <a href="#" class="list-link">Somelonglonglink 4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="box-address">
+                <h5 class="card-header">Contact</h5>
+                <dl class="box-address__list">
+                  <dt class="box-address__term">Address:</dt>
+                  <dd class="box-address__description">
+                    <address>Country City, Street 123</address>
+                  </dd>
+                  <dt class="box-address__term">Telefoon:</dt>
+                  <dd class="box-address__description">
+                    <a class="box-address__link" href="tel:123456789">(123) 456 78 90</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer bg-dark py-3">
-  <div class="container d-sm-flex align-items-center justify-content-between">
-    <p class="copyright text-center m-0">Some long text about copyright</p>
-    <ul class="socials d-flex flex-row justify-content-center">
-      <li class="socials__item rounded-circle text-center mx-1">
-        <a href="https://twitter.com/?lang=ru" class="btn-social" target="_blank">
-          <i class="icon icon-twitter-logo"></i>
-        </a>
-      </li>
-      <li class="socials__item rounded-circle text-center mx-1">
-        <a href="https://uk-ua.facebook.com/" class="btn-social" target="_blank">
-          <i class="icon icon-facebook-logo"></i>
-        </a>
-      </li>
-      <li class="socials__item rounded-circle text-center mx-1">
-        <a href="https://www.youtube.com/" class="btn-social" target="_blank">
-          <i class="icon icon-button-play"></i>
-        </a>
-      </li>
-    </ul>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-12 col-sm-6 col-md-3 text-center text-sm-left">
+        <p class="copyright  mb-0">Some long text about copyright</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <ul class="socials d-flex flex-row justify-content-center justify-content-sm-end">
+          <li class="socials__item rounded-circle text-center mx-1 ml-sm-1">
+            <a href="https://twitter.com/?lang=ru" class="btn-social" target="_blank">
+              <i class="icon icon-twitter-logo"></i>
+            </a>
+          </li>
+          <li class="socials__item rounded-circle text-center mx-1 ml-sm-1">
+            <a href="https://uk-ua.facebook.com/" class="btn-social" target="_blank">
+              <i class="icon icon-facebook-logo"></i>
+            </a>
+          </li>
+          <li class="socials__item rounded-circle text-center mx-1 ml-sm-1">
+            <a href="https://www.youtube.com/" class="btn-social" target="_blank">
+              <i class="icon icon-button-play"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
 

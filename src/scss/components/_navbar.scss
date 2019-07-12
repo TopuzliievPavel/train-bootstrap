@@ -1,8 +1,7 @@
 .nav-link {
   font-size: $btn-font-size;
-  text-transform: capitalize;
 
-  transition: color .3s ease;
+  transition: color .3s;
 
   @include media-breakpoint-up(md) {
     font-size: 24px;
